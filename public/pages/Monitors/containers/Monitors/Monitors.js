@@ -558,7 +558,7 @@ export default class Monitors extends Component {
             onSearchChange={this.onSearchChange}
             onStateChange={this.onMonitorStateChange}
             onPageClick={this.onPageClick}
-            monitorActions={useUpdatedUx ? null : monitorActions}
+            monitorActions={useUpdatedUx ? monitorActions : null}
           />
 
           {showAcknowledgeModal && (
